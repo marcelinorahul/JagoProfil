@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembuat Kartu Nama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pembuat Kartu Nama</h1>
+        <div class="card-creator">
+            <div class="input-section">
+                <h2>Masukkan Data Anda</h2>
+                <input type="file" id="photo-upload" accept="image/*">
+                <input type="text" id="nama" placeholder="Nama Lengkap">
+                <input type="text" id="jabatan" placeholder="Jabatan">
+                <input type="text" id="perusahaan" placeholder="Perusahaan">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="telepon" placeholder="Nomor Telepon">
+                <input type="text" id="alamat" placeholder="Alamat">
+                <button id="generate-card">Buat Kartu</button>
+            </div>
+            <div class="preview-section">
+                <h2>Pratinjau Kartu</h2>
+                <div id="card-preview" class="card">
+                    <div class="card-left">
+                        <img id="preview-photo" src="placeholder.png" alt="Foto Profil">
+                    </div>
+                    <div class="card-right">
+                        <h3 id="preview-nama">Nama Anda</h3>
+                        <p id="preview-jabatan">Jabatan</p>
+                        <p id="preview-perusahaan">Perusahaan</p>
+                        <p id="preview-email">email@contoh.com</p>
+                        <p id="preview-telepon">08123456789</p>
+                        <p id="preview-alamat">Jl. Contoh No. 123, Kota, Negara</p>
+                    </div>
+                </div>
+                <button id="print-card">Cetak Kartu</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
